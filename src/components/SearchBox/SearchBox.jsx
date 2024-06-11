@@ -9,7 +9,7 @@ export const SearchBox = () => {
   const handleKeyDown = (e) => {
     if (e.key === 'Enter') {
       e.preventDefault();
-      navigate(`/SearchList/${search}`);
+      navigate(`/SearchList?title=${search}`);
       setSearch('');
     }
   };

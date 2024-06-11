@@ -2,7 +2,6 @@ import React from 'react'
 import style from './Card.module.css'
 
 export const Card = ({book}) => {
-    console.log(book.title)
   return (
     <article className={style.card}>
          <img className={style.image} src={book.cover} alt={book.title} />

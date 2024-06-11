@@ -15,14 +15,13 @@ import { Header } from './components/Header/Header'
 import { Footer } from './components/Footer/Footer'
 
 function App() {
-
 //pages que faltan: Contact, buyPAge, DetailBook, AboutUsSection
   return (
     <div className="App">
       <Header />
       <Routes>
         <Route path="/" element={<Home libros={libros}/>} /> 
-        <Route path="/SearchList/:book" element={<SearchList />} />
+        <Route path="/SearchList" element={<SearchList />} />
         <Route path="/DetailBook" element={<DetailBook />} />
         <Route path="/AboutUs" element={<AboutUsSection />} />
         <Route path="/AllBooks" element={<AllBooks libros={libros}/>} />

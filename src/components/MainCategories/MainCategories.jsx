@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 export const MainCategories = () => {
     const categories = [
-        ["terror", "romance", "aventura", "cienciaFiccion", "drama", "comedia"],
+        ["Terror", "Ciencia ficción", "Fantasía", "Zombies", "drama", "comedia"],
         ["misterio", "fantasia", "infantil", "juvenil", "adulto"]
     ]
 
@@ -15,7 +15,7 @@ export const MainCategories = () => {
                 <ul className={styles.listCategory}>
                     {categories[0].map(category => (
                         <li className={styles.item} key={category}>
-                            <Link to='/SearchList' className={styles.menuItem}>
+                            <Link to= {`/SearchList?genre=${category}`} className={styles.menuItem}>
                                 {category}
                             </Link>
                         </li>
