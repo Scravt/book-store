@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-evenly;
     color: #f5f5f5;
+    padding-bottom: 40px;
 }
 
 .containers{
